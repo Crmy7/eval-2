@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 
 const copy = () => {
-    gulp.src('style/style.css')
+    gulp.src('style/style.less')
        .pipe(gulp.dest('dist/'));
 }
 
