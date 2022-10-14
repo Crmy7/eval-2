@@ -1,0 +1,38 @@
+html{
+    background-color: black;
+    font-family: Gotham Office;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .carre{
+        width: 600px;
+        height: 600px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: all .5s ease-in-out;
+        &:hover{
+            border-radius: 600px;
+            background-color: blueviolet;
+            rotate: 360deg;
+            h1{
+                color: pink;
+            }
+            h3{
+                color: red;
+            }
+        }
+    }
+   
+}
+
+body:hover{
+    h1{
+        color: pink;
+    }
+    h2{
+        color: red;
+    }
+}

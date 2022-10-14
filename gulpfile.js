@@ -1,8 +1,17 @@
 const gulp = require('gulp');
+const less = require('gulp-less');
 
 const copy = () => {
-    gulp.src('style/style.less')
-       .pipe(gulp.dest('dist/'));
+    gulp.src('./style/style.less')
+        .pipe(less())
+        .pipe(gulp.dest('dist/'));
 }
 
-exports.default = copy;
+const listen = () =>{
+    gulp.watch('./style/style.less')
+        .on('change', function() {
+            copy();
+        })
+}
+
+exports.default = listen;
