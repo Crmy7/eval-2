@@ -1,34 +1,26 @@
 html {
-  background-color: black;
-  font-family: Gotham Office;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #211758;
 }
-html .carre {
-  width: 600px;
-  height: 600px;
-  background-color: red;
+nav ul li {
+  list-style-type: none;
+}
+nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+ul {
+  text-align: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.main-nav a {
+  margin: 20px;
+  text-decoration: none;
   color: white;
-  transition: all 0.5s ease-in-out;
-}
-html .carre:hover {
-  border-radius: 600px;
-  background-color: blueviolet;
-  rotate: 360deg;
-}
-html .carre:hover h1 {
-  color: pink;
-}
-html .carre:hover h3 {
-  color: red;
-}
-body:hover h1 {
-  color: pink;
-}
-body:hover h2 {
-  color: red;
 }
