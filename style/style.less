@@ -1,8 +1,14 @@
+/* VARIABLES LESS */
 @background: #C1F7D5; 
 @color-blue: #354463;
 html{
     background-color: @color-blue;
 }
+::selection{
+    background-color: @background;
+    color: @color-blue;
+}
+/* MIXINS LESS */
 .rectangle{
     width: 160px;
     height: 40px;
@@ -15,6 +21,7 @@ html{
     background-color: white;
     color: @color-blue;
 }
+/* MIXINS LESS */
 button{
     background-color: @background;
     border: 0px;
@@ -30,6 +37,8 @@ button{
     justify-content: center;
     align-items: center;
 }
+
+//Nav
 nav{
     height: 120px;
     background-color: white;
@@ -64,6 +73,8 @@ nav{
         color: @color-blue;
     }
 }
+
+//Banner
 .banner{
     width: 100%;
     height: 672px;
@@ -127,6 +138,8 @@ nav{
     }
 }
 
+
+//ACTION
 .action{
     height: 240px;
     width: 100%;
@@ -134,7 +147,10 @@ nav{
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: baseline;
-
+    ::selection{
+        background-color: @color-blue;
+        color: @background;
+    }
     .infoaction{
         display: flex;
         flex-wrap: wrap;
@@ -256,7 +272,7 @@ nav{
         font-size: 15px;
     }
     nav{
-        height: 50px;
+        height: auto;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -265,27 +281,32 @@ nav{
         ul li{
             list-style-type: none;
         }
-          
+        li{
+            margin-bottom: 10px;
+        }
         ul{
             display: flex;
             text-align:center; 
             align-items: center;
+            flex-direction: column !important;
         }
         .logo{
-            margin-right: 50px;
+            margin-right: 0px;
+            margin-bottom: -10px;
+            margin-top: 10px;
         }
         .first{
-            margin-right: 20px;
+            margin-right: 0px;
         }
         .second{
-            margin-right: 20px;
+            margin-right: 0px;
         }
         .third{
-            margin-right: 20px;
+            margin-right: 0px;
         }
     
         a{
-            font-size: 12px;
+            font-size: 15px;
             text-decoration: none;
             color: @color-blue;
         }
@@ -303,17 +324,14 @@ nav{
 
     .banner{
         height: 400px;
+        flex-direction: column !important;
         .left{
-            margin-right: 30px;
-            margin-left: -10px;
+            margin-top: 50px;
+            margin-right: 0px;
         }
         .bloc{
             height: 200px;
-            width: 240px;
-            .rectangle{
-                margin-left: 65px;
-                margin-top: -15px;
-            }
+            width: 220px;
             h1{
                 font-size: 20px;
                 padding: 20px;
@@ -321,7 +339,7 @@ nav{
             }
             a{
                 margin:0px;
-                font-size: 13px;
+                font-size: 12px;
                 padding-left: 20px;
                 padding-right: 20px;
                 line-height: 18px;
@@ -329,9 +347,11 @@ nav{
         }
         .right{
             height: 200px;
-            margin-right: 10px;
+            margin-top: 30px;
+            width: 100%;
             h2 {
-                font-size: 40px;
+                font-size: 35px;
+                text-align: center;
             }
 
         }
@@ -341,6 +361,7 @@ nav{
         .rectangle{
             margin-top: -15px;
             margin-left: 0px;
+            width: 125px;
         }
     }
     .infoaction{
@@ -356,12 +377,25 @@ nav{
 
 }
 .apropos-content{
-    h2{
-        font-size: 30px;
-    }
     .rectangle-negative{
         margin-top: -15px;
         margin-left: 0px;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    .container-missions{
+        padding-left: 35px;
+        .mission{
+            margin-bottom: 80px;
+            .image1{
+                width: 280px !important;
+                height: 184px !important;
+            }
+            .image2{
+                .image1
+            }
+        }
     }
 }
 

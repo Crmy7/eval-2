@@ -1,6 +1,12 @@
+/* VARIABLES LESS */
 html {
   background-color: #354463;
 }
+::selection {
+  background-color: #C1F7D5;
+  color: #354463;
+}
+/* MIXINS LESS */
 .rectangle {
   width: 160px;
   height: 40px;
@@ -13,6 +19,7 @@ html {
   background-color: white;
   color: #354463;
 }
+/* MIXINS LESS */
 button {
   background-color: #C1F7D5;
   border: 0px;
@@ -124,6 +131,10 @@ nav a {
   flex-wrap: wrap;
   align-items: baseline;
 }
+.action ::selection {
+  background-color: #354463;
+  color: #C1F7D5;
+}
 .action .infoaction {
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +241,7 @@ nav a {
     font-size: 15px;
   }
   nav {
-    height: 50px;
+    height: auto;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -240,25 +251,31 @@ nav a {
   nav ul li {
     list-style-type: none;
   }
+  nav li {
+    margin-bottom: 10px;
+  }
   nav ul {
     display: flex;
     text-align: center;
     align-items: center;
+    flex-direction: column !important;
   }
   nav .logo {
-    margin-right: 50px;
+    margin-right: 0px;
+    margin-bottom: -10px;
+    margin-top: 10px;
   }
   nav .first {
-    margin-right: 20px;
+    margin-right: 0px;
   }
   nav .second {
-    margin-right: 20px;
+    margin-right: 0px;
   }
   nav .third {
-    margin-right: 20px;
+    margin-right: 0px;
   }
   nav a {
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     color: #354463;
   }
@@ -274,18 +291,15 @@ nav a {
   }
   .banner {
     height: 400px;
+    flex-direction: column !important;
   }
   .banner .left {
-    margin-right: 30px;
-    margin-left: -10px;
+    margin-top: 50px;
+    margin-right: 0px;
   }
   .banner .bloc {
     height: 200px;
-    width: 240px;
-  }
-  .banner .bloc .rectangle {
-    margin-left: 65px;
-    margin-top: -15px;
+    width: 220px;
   }
   .banner .bloc h1 {
     font-size: 20px;
@@ -294,21 +308,24 @@ nav a {
   }
   .banner .bloc a {
     margin: 0px;
-    font-size: 13px;
+    font-size: 12px;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 18px;
   }
   .banner .right {
     height: 200px;
-    margin-right: 10px;
+    margin-top: 30px;
+    width: 100%;
   }
   .banner .right h2 {
-    font-size: 40px;
+    font-size: 35px;
+    text-align: center;
   }
   .action .ctabox .rectangle {
     margin-top: -15px;
     margin-left: 0px;
+    width: 125px;
   }
   .action .infoaction {
     width: 40%;
@@ -319,11 +336,25 @@ nav a {
   .action .infoaction p {
     font-size: 15px;
   }
-  .apropos-content h2 {
-    font-size: 30px;
-  }
   .apropos-content .rectangle-negative {
     margin-top: -15px;
     margin-left: 0px;
+  }
+  .apropos-content h2 {
+    font-size: 30px !important;
+  }
+  .apropos-content .container-missions {
+    padding-left: 35px;
+  }
+  .apropos-content .container-missions .mission {
+    margin-bottom: 80px;
+  }
+  .apropos-content .container-missions .mission .image1 {
+    width: 280px !important;
+    height: 184px !important;
+  }
+  .apropos-content .container-missions .mission .image2 {
+    width: 280px !important;
+    height: 184px !important;
   }
 }
