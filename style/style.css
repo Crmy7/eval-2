@@ -336,30 +336,38 @@ nav a {
   .action .infoaction p {
     font-size: 15px;
   }
-  .apropos-content .rectangle-negative {
+  .apropos {
+    height: auto !important;
+  }
+  .apropos .apropos-content .rectangle-negative {
     margin-top: -15px;
     margin-left: 0px;
   }
-  .apropos-content h2 {
+  .apropos .apropos-content h2 {
     font-size: 30px !important;
   }
-  .apropos-content .container-missions {
-    padding-left: 35px;
+  .apropos .apropos-content .container-missions {
+    padding-left: 45px;
   }
-  .apropos-content .container-missions .mission {
+  .apropos .apropos-content .container-missions .mission {
+    margin-left: 0px !important;
     margin-bottom: 80px;
-    width: 280px !important;
+    width: 270px !important;
     height: 485px !important;
   }
-  .apropos-content .container-missions .mission .image1 {
+  .apropos .apropos-content .container-missions .mission .img {
+    margin-left: 15px !important;
+    margin-top: -32px !important;
+  }
+  .apropos .apropos-content .container-missions .mission .image1 {
     width: 280px !important;
     height: 184px !important;
   }
-  .apropos-content .container-missions .mission .image2 {
+  .apropos .apropos-content .container-missions .mission .image2 {
     width: 280px !important;
     height: 184px !important;
   }
-  .apropos-content .container-missions .mission .image3 {
+  .apropos .apropos-content .container-missions .mission .image3 {
     width: 280px !important;
     height: 184px !important;
   }
