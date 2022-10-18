@@ -1,151 +1,329 @@
-::selection {
-  color: #211758;
-  background-color: #FAC4C1;
-}
 html {
-  background-color: #211758;
-  font-family: 'Open Sans';
+  background-color: #354463;
 }
-nav ul li {
-  list-style-type: none;
+.rectangle {
+  width: 160px;
+  height: 40px;
+  background-color: #354463;
+  color: white;
+}
+.rectangle-negative {
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  color: #354463;
+}
+button {
+  background-color: #C1F7D5;
+  border: 0px;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  border-radius: 100px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  color: #354463;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav {
+  height: 120px;
+  background-color: white;
   display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  margin-top: 100px;
-}
-nav .marg-l {
-  margin-right: 100px;
-}
-nav ul {
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #354463;
 }
 nav ul li {
   list-style-type: none;
-  display: inline-flex;
-  justify-content: flex-end;
 }
-.main-nav a {
-  margin-left: 50px;
+nav ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+nav .logo {
+  margin-right: 224px;
+}
+nav .first {
+  margin-right: 129px;
+}
+nav .second {
+  margin-right: 114px;
+}
+nav .third {
+  margin-right: 72px;
+}
+nav a {
   text-decoration: none;
+  color: #354463;
+}
+.banner {
+  width: 100%;
+  height: 672px;
+  background-image: linear-gradient(to bottom, rgba(145, 199, 174, 0.7), rgba(145, 199, 174, 0.7)), url(../img/li-an-lim-ycW4YxhrWHM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.banner .right {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  width: 30%;
+  height: 416px;
+}
+.banner .right h2 {
+  font-family: 'Flood Std';
+  font-size: 72px;
   color: white;
 }
-.main-nav a {
-  color: white;
-  opacity: 0.09;
-  transition: all 0.3s ease-in-out;
+.banner .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 135px;
 }
-.main-nav a:hover {
-  opacity: 1;
-}
-.underline {
-  text-decoration: none;
-  position: relative;
-}
-.underline:after {
+.banner .left .rectangle {
   position: absolute;
-  content: '';
-  height: 2px;
-  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-  bottom: -5px;
-  /****** 
-    optional values below 
-    ******/
-  /* center - (optional) use with adjusting width   */
-  margin: 0 auto;
-  left: 0;
-  right: -10;
-  width: 0%;
-  background: black;
-  /* optional animation */
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin-left: 64px;
+  margin-top: -16px;
 }
-/* optional hover classes used with anmiation */
-.underline:hover:after {
+.banner .bloc {
+  width: 544px;
+  height: 416px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.banner .bloc h1 {
+  font-size: 44px;
+  color: #354463;
+  padding-right: 64px;
+  padding-left: 64px;
+  padding-top: 76px;
+  font-family: 'PoynterOSDisp';
+  font-weight: 650;
+}
+.banner .bloc a {
+  text-decoration: none;
+  color: #354463;
+  text-decoration: underline;
+  margin-left: -25px;
+  margin-top: 24px;
+  font-size: 16px;
+  font-family: 'Komet';
+}
+.action {
+  height: 240px;
   width: 100%;
-  background: #ffffff;
+  background-color: #C1F7D5;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
-li .actif {
-  opacity: 1;
-}
-.carre {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  margin-left: 50px;
-}
-section {
-  height: 500px;
-  width: 100vw;
+.action .infoaction {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 17%;
 }
-section h1 {
-  font-size: 7rem;
-  font-style: bold;
-  font-weight: bolder;
-  color: white;
+.action .infoaction h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
-section .bloc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 340px;
-  height: 400px;
-  background-image: url(../img/fond.jpg);
-  background-position: center;
+.action .infoaction p {
+  opacity: 60%;
 }
-section .left {
-  font-size: 1.4rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 500px;
-}
-section .right {
-  font-size: 1.4rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 500px;
-}
-.bgdiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.h3 {
-  font-size: 1.4rem;
-  color: white;
-}
-.divDots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.ctabox {
   width: 100%;
-  height: 50px;
+  display: flex;
+  justify-content: center;
 }
-.dots {
-  margin: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+.ctabox .rectangle {
+  margin-top: -20px;
+}
+.apropos {
+  height: 1059px;
+  width: 100%;
+}
+.apropos .apropos-content {
+  width: 80%;
+  height: 1059px;
+  margin-top: 88px;
+}
+.apropos .apropos-content .rectangle-negative {
+  margin-bottom: 44px;
+}
+.apropos .apropos-content h2 {
+  font-size: 44px;
+  color: white;
+  margin-bottom: 74px;
+}
+.apropos .apropos-content .container-missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.apropos .apropos-content .container-missions .mission {
+  height: 528px;
+  width: 320px;
+  margin-right: 64px;
   background-color: white;
 }
-.bg {
-  margin: 5px;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background-color: white;
+.apropos .apropos-content .container-missions .mission .img {
+  width: 320px;
+  height: 224px;
+  background-repeat: no-repeat;
+  margin-left: 32px;
+  margin-top: -32px;
+  margin-bottom: 29px;
+}
+.apropos .apropos-content .container-missions .mission .image1 {
+  background-image: linear-gradient(to bottom, rgba(33, 116, 77, 0.5), rgba(33, 116, 77, 0.5)), url(../img/arnaud-mesureur-7EqQ1s3wIAI-unsplash.jpg);
+  background-size: cover;
+}
+.apropos .apropos-content .container-missions .mission .image2 {
+  background-image: linear-gradient(to bottom, rgba(33, 116, 77, 0.5), rgba(33, 116, 77, 0.5)), url(../img/matt-briney-AZYvkGOAvIs-unsplash.jpg);
+  background-size: cover;
+}
+.apropos .apropos-content .container-missions .mission .image3 {
+  background-image: linear-gradient(to bottom, rgba(33, 116, 77, 0.5), rgba(33, 116, 77, 0.5)), url(../img/mark-basarab-y421kXlUOQk-unsplash.jpg);
+  background-size: cover;
+}
+.apropos .apropos-content .container-missions .mission h3 {
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-bottom: 13px;
+  font-size: 28px;
+  font-family: 'PoynterOSDisp';
+  font-weight: 600;
+}
+.apropos .apropos-content .container-missions .mission p {
+  line-height: 24px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  font-family: 'PoynterOSDisp';
+  opacity: 0.6;
+}
+.apropos .apropos-content .container-missions .mission button {
+  margin-left: 32px;
+}
+@media screen and (max-width: 450px) {
+  .rectangle {
+    margin-left: 40px;
+    margin-top: -25px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .rectangle-negative {
+    margin-left: 40px;
+    margin-top: -25px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+  nav {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #354463;
+  }
+  nav ul li {
+    list-style-type: none;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  nav .logo {
+    margin-right: 50px;
+  }
+  nav .first {
+    margin-right: 20px;
+  }
+  nav .second {
+    margin-right: 20px;
+  }
+  nav .third {
+    margin-right: 20px;
+  }
+  nav a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #354463;
+  }
+  nav button {
+    background-color: #C1F7D5;
+    border: 0px;
+    padding: 5px 10px;
+    padding-bottom: 7.5px;
+    border-radius: 50px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #354463;
+  }
+  .banner {
+    height: 400px;
+  }
+  .banner .left {
+    margin-right: 30px;
+    margin-left: -10px;
+  }
+  .banner .bloc {
+    height: 200px;
+    width: 240px;
+  }
+  .banner .bloc .rectangle {
+    margin-left: 65px;
+    margin-top: -15px;
+  }
+  .banner .bloc h1 {
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .banner .bloc a {
+    margin: 0px;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 18px;
+  }
+  .banner .right {
+    height: 200px;
+    margin-right: 10px;
+  }
+  .banner .right h2 {
+    font-size: 40px;
+  }
+  .action .ctabox .rectangle {
+    margin-top: -15px;
+    margin-left: 0px;
+  }
+  .action .infoaction {
+    width: 40%;
+  }
+  .action .infoaction h3 {
+    font-size: 20px;
+  }
+  .action .infoaction p {
+    font-size: 15px;
+  }
+  .apropos-content h2 {
+    font-size: 30px;
+  }
+  .apropos-content .rectangle-negative {
+    margin-top: -15px;
+    margin-left: 0px;
+  }
 }
